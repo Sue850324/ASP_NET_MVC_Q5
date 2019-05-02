@@ -1,0 +1,20 @@
+﻿@model ASP_NET_MVC_Q5.Models.Select
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <form action="/Home/Index" method="post">
+            <div>
+                Locale: @Html.DropDownListFor(m => m.Locale, ViewData["SelectLocale"] as IEnumerable<SelectListItem>)
+            </div>
+            <div>
+                產品名稱:<input type="text" name="Product_Name">
+            </div>
+            <div>
+                最低價格 <input type="number" name="MiniPrice"> ~ 最高價格: <input type="number" name="MaxPrice" >
+            </div>
+            <button type="submit">Search</button>
+        </form>
+</body>
+</html>

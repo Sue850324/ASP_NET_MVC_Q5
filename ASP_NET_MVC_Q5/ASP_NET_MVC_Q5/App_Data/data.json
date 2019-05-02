@@ -1,0 +1,93 @@
+[
+    {
+        "Id": 1,
+        "Locale": "US",
+        "Product_Name": "Apple AirPods with Wireless Charging Case (Latest Model)",
+        "Price": 100.11,
+        "Create_Date": "2019-03-26T09:35:32.8485702Z"
+    },
+    {
+        "Id": 2,
+        "Create_Date": "2018-12-25T09:35:32.8495681Z",
+        "Locale": "US",
+        "Product_Name": "PlayStation 4 Slim 1TB Console",
+        "Price": 299.99
+    },
+    {
+        "Id": 3,
+        "Create_Date": "2019-03-22T09:35:32.8495681Z",
+        "Locale": "US",
+        "Product_Name": "Anker Bolder LC90 2-Cell Rechargeable Flashlight, IP65 Water-Resistant, Zoomable",
+        "Price": 35.99
+    },
+    {
+        "Id": 4,
+        "Create_Date": "2019-03-25T14:35:32.8495681Z",
+        "Locale": "DE",
+        "Product_Name": "Apple iPhone 8 (64 GB) - Space Grau",
+        "Price": 549.00
+    },
+    {
+        "Id": 5,
+        "Create_Date": "2019-03-25T11:35:32.8495681Z",
+        "Locale": "DE",
+        "Product_Name": "Mabyen Baby Poncho - Babybademantel Kapuzenbademantel Badehandtuch",
+        "Price": 29.95
+    },
+    {
+        "Id": 6,
+        "Create_Date": "2019-03-25T10:35:32.8495681Z",
+        "Locale": "DE",
+        "Product_Name": "SonyNWWS413L.CEW Sport-Walkman 4GB (kabellos, Wasserdicht, Staubdicht) blau",
+        "Price": 79.95
+    },
+    {
+        "Id": 7,
+        "Create_Date": "2019-03-25T10:35:32.8495681Z",
+        "Locale": "FR",
+        "Product_Name": "PS4 500 Go F Black + Manette 2ème DualShock PS4 - noir",
+        "Price": 339.99
+    },
+    {
+        "Id": 8,
+        "Create_Date": "2017-03-25T09:35:32.8495681Z",
+        "Locale": "JP",
+        "Product_Name": "きかんしゃトーマス レッツゴー大冒険!",
+        "Price": 3262
+    },
+    {
+        "Id": 9,
+        "Create_Date": "2018-12-25T09:35:32.8495681Z",
+        "Locale": "JP",
+        "Product_Name": "Apple iPhone XR 64GB Black ブラック MT002J/A A2106 国内版SIMフリー",
+        "Price": 76649
+    },
+    {
+        "Id": 10,
+        "Create_Date": "2019-03-22T09:35:32.8495681Z",
+        "Locale": "JP",
+        "Product_Name": "Amazonベーシック ハードタイプ ダブルキャスター付きスーツケース",
+        "Price": 4600
+    },
+    {
+        "Id": 11,
+        "Create_Date": "2019-03-25T14:35:32.8495681Z",
+        "Locale": "CA",
+        "Product_Name": "Echo Dot (3rd gen) - Smart speaker with Alexa - Charcoal",
+        "Price": 49.99
+    },
+    {
+        "Id": 12,
+        "Create_Date": "2019-03-25T11:35:32.8495681Z",
+        "Locale": "CA",
+        "Product_Name": "Verilux VT10WW1 HappyLight Liberty Compact Light Therapy Lamp",
+        "Price": 49.95
+    },
+    {
+        "Id": 13,
+        "Create_Date": "2019-03-25T10:35:32.8495681Z",
+        "Locale": "CA",
+        "Product_Name": "Anewish Playstation 4 Charging Station PS4 Controller Charger LED Indicator for Playstation 4 PS4/PS4 Pro/PS4 Slim Controller PS4 Charging Dock",
+        "Price": 17
+    }
+]
