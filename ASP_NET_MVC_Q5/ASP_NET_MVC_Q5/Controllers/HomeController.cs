@@ -11,29 +11,29 @@ namespace ASP_NET_MVC_Q5.Controllers
 {
     public class HomeController : Controller
     {
-        public List<Select> showResult()
+        public List<Select> ShowResult()
         {
-            string filepath = Server.MapPath("~/App_Data/data.json");
-            string json = System.IO.File.ReadAllText(filepath);
+            string filePath = Server.MapPath("~/App_Data/data.json");
+            string json = System.IO.File.ReadAllText(filePath);
             List<Select> list = JsonConvert.DeserializeObject<List<Select>>(json);
             return list;
         }
         public void Locale()
         {
-            showResult();
-            var selectlist = new List<SelectListItem>();
-            selectlist.Add(new SelectListItem { Text = "未選擇", Value = "", Selected = true });
-            selectlist.Add(new SelectListItem { Text = "Unite State", Value = "US" });
-            selectlist.Add(new SelectListItem { Text = "Germany", Value = "DE" });
-            selectlist.Add(new SelectListItem { Text = "Canada", Value = "CA" });
-            selectlist.Add(new SelectListItem { Text = "Spain", Value = "ES" });
-            selectlist.Add(new SelectListItem { Text = "France", Value = "FR" });
-            selectlist.Add(new SelectListItem { Text = "Japen", Value = "JP" });
-            ViewData["SelectLocale"] = selectlist;
+            ShowResult();
+            var selectList = new List<SelectListItem>();
+            selectList.Add(new SelectListItem { Text = "未選擇", Value = "", Selected = true });
+            selectList.Add(new SelectListItem { Text = "Unite State", Value = "US" });
+            selectList.Add(new SelectListItem { Text = "Germany", Value = "DE" });
+            selectList.Add(new SelectListItem { Text = "Canada", Value = "CA" });
+            selectList.Add(new SelectListItem { Text = "Spain", Value = "ES" });
+            selectList.Add(new SelectListItem { Text = "France", Value = "FR" });
+            selectList.Add(new SelectListItem { Text = "Japen", Value = "JP" });
+            ViewData["SelectLocale"] = selectList;
         }
         public List<Select> SelectData(Select select)
         {
-            var list = showResult();
+            var list = ShowResult();
             if (!string.IsNullOrEmpty(select.Locale))
             {
                 list = list.Where(x => x.Locale == select.Locale).ToList();
@@ -64,10 +64,9 @@ namespace ASP_NET_MVC_Q5.Controllers
         {
             return RedirectToAction("Result", select);
         }
-        public ActionResult Result(Select select, int Page=1, int Pagesize=5)
+        public ActionResult Result(Select select, int page=1, int pageSize=5)
         {
-            var list = SelectData(select).OrderBy(x => x.Id).ToPagedList(Page, Pagesize); 
-          
+            var list = SelectData(select).OrderBy(x => x.Id).ToPagedList(page, pageSize);           
             return View(list);          
         }
     }
