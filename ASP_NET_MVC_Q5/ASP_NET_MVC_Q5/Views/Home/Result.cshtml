@@ -5,34 +5,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        .fancytable {
-            border: 1px solid #cccccc;
-            width: 100 %;
-            border - collapse: collapse;
-        }
-
-            .fancytable td {
-                border: 1px solid #cccccc;
-                color: #555555;
-                text - align: center;
-                line - height: 28px;
-            }
-
-        .headerrow {
-            background-color: #0066cc;
-        }
-
-            .headerrow td {
-                color: #ffffff;
-                text-align: center;
-            }
-    </style>
+    <link href="~/Content/Table.css" rel="stylesheet" />
 </head>
 <body>
     <div>
         <table class="fancytable">
-            <span id="spanA">
                 <tr class="headerrow">
                     <td class="headerrow" align="center" valign="center">ID</td>
                     <td align="center" valign="center">Product Name</td>
@@ -54,7 +31,6 @@
                         </tr>
                     }
                 }
-            </span>
         </table>
         @Html.PagedListPager((IPagedList)Model, x => Url.Action("Result", new { page = x }))
     </div>

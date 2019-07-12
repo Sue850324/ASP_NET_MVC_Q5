@@ -50,6 +50,10 @@ namespace ASP_NET_MVC_Q5.Controllers
             {
                 list = list.Where(x => x.Product_Name.IndexOf(select.Product_Name, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
             }
+            if (list == null)
+            {
+                Console.WriteLine("查無資料");
+            }
 
             return list;
         }

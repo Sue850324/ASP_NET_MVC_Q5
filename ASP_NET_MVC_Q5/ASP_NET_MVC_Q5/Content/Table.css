@@ -1,0 +1,21 @@
+﻿.fancytable {
+    border: 1px solid #cccccc;
+    width: 100 %;
+    border-collapse: collapse;
+}
+
+.fancytable td {
+    border: 1px solid #cccccc;
+    color: #555555;
+    text-align: center;
+    line-height: 28px;
+}
+
+.headerrow {
+    background-color: #0066cc;
+}
+
+    .headerrow td {
+        color: #ffffff;
+        text-align: center;
+    }
